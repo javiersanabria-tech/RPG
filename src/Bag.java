@@ -59,7 +59,7 @@ public abstract class Bag{
             Fullness = false;
             System.out.println(itemName + " removed from slot " + slotNumber + "!");
         } else {
-            System.out.println("Item not found in specified slot.");
+            System.out.println("Item not found.");
         }
     }
 
@@ -73,7 +73,7 @@ public abstract class Bag{
         System.out.println("New Bag Stats: "+slots+" slots, "+availability+" slots available, full bag? : "+Fullness+", "+weight+"lbs");
     }
 }
-//Different Bag types
+//Different Bag types (I wanted to try and have items with ID's so they would automatically go in bags but I ran out of time)
 
 class armorBag extends Bag{
     public armorBag(){
@@ -83,8 +83,6 @@ class armorBag extends Bag{
         weight=0d;
     }
 }
-
-
 class weaponBag extends Bag{
     public weaponBag(){
         slots=15;
@@ -93,8 +91,6 @@ class weaponBag extends Bag{
         weight=0d;
     }
 }
-
-
 class itemBag extends Bag{
     public itemBag(){
         slots=25;
@@ -103,8 +99,6 @@ class itemBag extends Bag{
         weight=0d;
     }
 }
-
-
 class keyItemBag extends Bag{
     public keyItemBag(){
         slots=50;
